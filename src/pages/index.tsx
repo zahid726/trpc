@@ -2,7 +2,7 @@ import Head from "next/head";
 import { trpc } from "../utils/trpc";
 
 export default function Home() {
-  const result = trpc.greeting.useQuery({ name: "John" });
+  const result = trpc.greeting.useQuery({ name: "zahid" });
 
   if (!result.data) {
     return <div>Loading...</div>;
